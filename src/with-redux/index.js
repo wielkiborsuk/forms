@@ -1,14 +1,20 @@
 import React from 'react';
-import {applyMiddleware, createStore} from 'redux';
 import {Provider} from 'react-redux';
-import logger from 'redux-logger';
-import {ContactForm} from './components/ContactForm';
+//import {ContactForm} from './components/ContactForm';
+import { ContactReduxForm } from './components/ContactReduxForm';
 import {store} from './store';
 
 
+const submit = (values) => {
+  alert(JSON.stringify(values));
+}
+
 const WithRedux = () => (
-    <Provider store={createStore(store, applyMiddleware(logger))}>
-        <ContactForm/>
+    <Provider store={store}>
+      <div>
+        <ContactReduxForm onSubmit={submit} />
+        { /* <ContactForm/> */ }
+      </div>
     </Provider>
 );
 

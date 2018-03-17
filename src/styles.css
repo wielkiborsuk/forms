@@ -4,7 +4,7 @@ html {
 
 label {
     display: block;
-    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 input, textarea {
@@ -12,7 +12,11 @@ input, textarea {
     display: block;
 }
 
-input ~ div {
+.form-control {
+  margin: 5px;
+}
+
+span.error {
     color: red;
     font-size: 0.8rem;
     margin-top: 0.4em;

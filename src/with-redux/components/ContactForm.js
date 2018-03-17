@@ -122,6 +122,6 @@ class ContactFormBase extends Component {
 }
 
 export const ContactForm = connect(
-    state => ({fields: state.contactForm}),
+    state => ({fields: state.simple.contactForm}),
     dispatch => bindActionCreators({update, reset}, dispatch)
 )(ContactFormBase);
