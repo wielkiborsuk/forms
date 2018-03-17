@@ -1,5 +1,5 @@
 html {
-    font-family: Verdana, sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 label {
@@ -7,9 +7,10 @@ label {
     margin-top: 1em;
 }
 
-input, textarea {
-    margin-top: 0.5em;
-    display: block;
+input,
+textarea {
+  margin-top: 0.5em;
+  display: block;
 }
 
 .form-control {
@@ -26,5 +27,4 @@ button, input:not([type="file"]), textarea {
     padding: 1em;
     border-radius: 0.2em;
     border: 1px lightgrey solid;
-
 }
